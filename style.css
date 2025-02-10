@@ -1,0 +1,580 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    color: #fff;
+    background-color: #121212;
+}
+
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #121212;
+    padding: 0.5rem;
+
+}
+
+.nav-icon-search,.nav-anchor-button {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    margin-left: 1.5rem;
+    height: 2rem;
+    color: white;
+}
+
+.nav-icon i{
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    background-color: #282828;
+    padding: 0.9rem;
+    border-radius: 3rem;
+    margin-right: -1rem;
+}
+
+.nav-search {
+    display: flex;
+    flex: 2rem;
+    align-items: center;
+    margin-left: 2rem;
+    background-color: #121212;
+    padding: 0.5rem;
+    border-radius: 1.7rem;
+    opacity: 0.8;
+    background-color: #282828;
+}
+
+.nav-search:hover,.nav-search input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.nav-search:hover {
+    border: 2px solid #fff;
+    transition: 0.5s ease-in all;
+}
+
+.nav-search i{
+     font-size: 1.25rem;
+     color: #fff;
+     padding: 0.5rem;
+     background-color: #282828;
+}
+
+.nav-search input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    flex: 1;
+    border-radius: 22px;
+    background-color: #282828;
+    -webkit-appearance: none;
+}
+
+.icon-browser {
+    height: 1.6rem;
+    width: 1.6rem;
+    color: black;
+    filter: invert(100%);
+}
+.nav-search:focus-visible {
+    border: 2px solid #fff;
+}
+
+.nav-search:active {
+    border: 2px solid white;
+}
+
+.nav-anchor  a{
+    font-weight: 700;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 8px 0px;
+    margin: 0px 0.5rem;
+}
+
+
+.nav-anchor a:hover {
+    font-size: 1.02rem;
+    color: #fff;
+}
+.nav-line{
+    height: 1.6rem;
+    width: 1px;
+    border-left: 2px solid #fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.app-install  {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.app-install span:hover {
+    color: white;
+    font-size:1.01rem;
+}
+
+.app-install i:hover {
+    opacity: 1;
+    font-size: 1.01rem;
+}
+
+
+.app-install span{
+    font-weight: 600;
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.app-install i {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.sign a{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 8px 0px;
+    margin-left: 2rem;
+}
+
+
+.sign a:hover {
+    font-size: 0.91rem;
+    color: white;
+}
+
+.log-in {
+    padding: 0.5rem 0.8rem;
+    width:120px;
+    height:3rem;
+    margin-right: 0.3rem;
+}
+
+.log-in button {
+    border-radius: 25px;
+    height: 3rem;
+    width: 108px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.log-in button:hover{
+    font-size: 1.1rem;
+    height:3.1rem;
+    width: 110px;
+    border-radius: 30px;
+}
+
+
+/* nav-side-bar  */
+
+
+
+
+/*side bar css styling starts from here */
+.side-bar {
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    top: 4rem;
+    background-color: #121212;
+    padding: 0.05rem 0.5rem;
+    /* margin-top: 1rem; */
+}
+
+
+.side-bar .library {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+.library .i-img {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.library .i-img a:hover {
+    color: white;
+}
+
+.plus-icon {
+    margin: 1.2rem;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.plus-icon:hover {
+    font-size: 1.01rem;
+    opacity: 1;
+}
+
+ .library  img{
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #b3b3b3;
+    margin-right: 1rem;
+}
+
+.library  a {
+    font-size: 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 8px 0px;
+}
+
+
+ .side-bar .your-details {
+    display: flex;
+    height: 9rem; 
+    width: 100%;
+    background-color: #282828;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.your-details .items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+     padding: 1rem 1.25rem;
+}
+
+.your-details a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.your-details span {
+    font-weight: 500;
+}
+
+.your-details button {
+    height:2rem;
+    font-size: 0.8rem;
+    width: 8.5rem;
+    font-weight: 600;
+    border-radius: 22px;
+}
+
+.your-details button:hover 
+{
+   font-size: 0.85rem;
+   width: 8.55rem;
+   height: 2.01rem;
+}
+
+.side-footer {
+    position: relative;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.side-footer span  {
+    position: relative;
+    font-size: 0.7rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.side-footer button {
+    margin-top: 2rem;
+    position: relative;
+    height:2rem;
+    font-size: 0.8rem;
+    width: 6rem;
+    font-weight: 600;
+    border-radius: 22px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    opacity: 0.9;
+    font-weight: 600;
+    
+}
+
+
+.side-footer button:hover {
+    font-size: 0.81rem;
+    color: white;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+
+
+.main-content{
+    color: black;
+    position: absolute;
+    overflow-y: scrool;
+    overflow-x: hidden;
+    top: 4rem;
+    bottom: 66px;
+    left: 30vw;
+    margin: 0rem 1rem;
+    height: 100%;
+    width: 70vw;
+    border-radius: 20px;
+    background-color: #282828; 
+    padding-left: 1.5rem;
+}
+
+.main-content .artist-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main-content .artist-section a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.main-content .artist-section a:hover {
+   text-decoration: underline;
+    opacity: 1;
+}
+
+
+.main-content .artist-section .art-smore {
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right:3rem;
+    padding: 0.5rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.artist-section-card {
+    position: relative;
+    display: inline-block;
+    height: 16rem;
+    width: 11.5rem;
+    background-color: #282828;
+    opacity: 0.9;
+    padding-right: 0.5rem;
+    margin: 0.3rem;
+}
+
+.artist-section-card img {
+    height: 11rem;
+    width: 11rem;
+    padding:0.5rem 0.5rem;
+    border-radius: 50%;
+}
+.artist-section-card:hover {
+    opacity: 1;
+    background-color: #45404060;
+    border-radius: 0.4rem;
+}
+
+
+.artist-section-card  .artist-name a {
+    font-weight: 700;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+.artist-section-card  .artist-name a:hover {
+    text-decoration: underline;
+    color: #fff;
+} 
+
+
+.artist-section-card  .profession p {
+    font-weight: 500;
+    color: #b3b3b3;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+
+.main-content-footer {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.main-content-footer a{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1rem;
+    font-weight: 300;
+    color: #b3b3b3;
+    text-decoration: none;
+    opacity: 0.9rem;
+}
+.main-content-footer .active {
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+}
+.main-content-footer a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    opacity: 1;
+    color: white;
+}
+
+.foot-line {
+  margin-top: 1rem;
+  height: 1px;
+  width: 100%;
+  background-color: whitesmoke;
+
+}
+
+.content-footer-icons {
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.content-footer-icons i {
+    margin: 1rem;
+    color: white;
+    opacity: 0.6;
+    font-size: 1.25rem;
+}
+.content-footer-icons i:hover {
+    opacity: 1;
+    font-size: 1.26rem ;
+}
+
+/* .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 0, 0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .0.9;
+}
+
+
+.artist-section-card:hover .play-button{
+    position: relative;
+    opacity: 1;
+    transform: translate(-50% , -50%) scale(1.2);
+}
+
+ */
+
+
+/* bottom nav of spootify */
+
+.pre-notify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+    height: 66px;
+    background: linear-gradient(to right,#ac2c99,#9f3ca7,#7075d5,#519af4);
+    padding: 0.5rem;
+}
+
+.pre-notify .b-info a{
+    position: relative;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+
+.pre-notify .b-click button {
+    position: relative;
+    border-radius: 25px;
+    height: 3rem;
+    width: 178px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.pre-notify button:hover {
+    height: 3.1rem;
+    width: 185px;
+    border-radius: 35px;
+    font-size: 1.1rem;
+}
+.navbar .ham-burger {
+    display: none;
+}
+
+@media(max-width: 480px) {
+   html {
+    font-size: 11px;
+   }
+   .side-bar {
+     margin-top: 1rem;
+   }
+.main-content {
+    margin-top: 1rem;
+   }
+
+   .navbar {
+    overflow-x: auto;
+   }
+}
+
